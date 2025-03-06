@@ -38,6 +38,11 @@ public class DoubleCounterMeterBuilderSdk: DoubleCounterBuilder, InstrumentBuild
     return self
   }
 
+  public func setDescription(_ description: String) -> Self {
+    self.description = description
+    return self
+  }
+
   public func build() -> OpenTelemetryApi.DoubleCounter {
     buildSynchronousInstrument(DoubleCounterSdk.init)
   }

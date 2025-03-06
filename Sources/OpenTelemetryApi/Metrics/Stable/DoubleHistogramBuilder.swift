@@ -10,5 +10,7 @@ public protocol DoubleHistogramBuilder: AnyObject {
 
   func setUnit(_ unit: String) -> Self
 
+  func setDescription(_ description: String) -> Self
+
   func build() -> DoubleHistogram
 }

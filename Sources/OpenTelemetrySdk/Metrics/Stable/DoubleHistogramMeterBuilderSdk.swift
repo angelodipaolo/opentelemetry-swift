@@ -42,6 +42,11 @@ public class DoubleHistogramMeterBuilderSdk: DoubleHistogramBuilder, InstrumentB
     return self
   }
 
+  public func setDescription(_ description: String) -> Self {
+    self.description = description
+    return self
+  }
+
   public func build() -> OpenTelemetryApi.DoubleHistogram {
     buildSynchronousInstrument(DoubleHistogramMeterSdk.init)
   }

@@ -46,6 +46,10 @@ public class DefaultStableMeter: StableMeter {
     func setUnit(_ unit: String) -> Self {
       self
     }
+      
+    func setDescription(_ description: String) -> Self {
+      self
+    }
 
     func build() -> DoubleHistogram {
       NoopDoubleHistogram()
@@ -168,6 +172,10 @@ public class DefaultStableMeter: StableMeter {
       self
     }
 
+    func setDescription(_ description: String) -> Self {
+      self
+    }
+
     func buildWithCallback(_ callback: @escaping (ObservableDoubleMeasurement) -> Void) -> ObservableDoubleCounter {
       NoopObservableDoubleCounter()
     }
@@ -187,6 +195,10 @@ public class DefaultStableMeter: StableMeter {
     }
 
     func setUnit(_ unit: String) -> Self {
+      self
+    }
+
+    func setDescription(_ description: String) -> Self {
       self
     }
 

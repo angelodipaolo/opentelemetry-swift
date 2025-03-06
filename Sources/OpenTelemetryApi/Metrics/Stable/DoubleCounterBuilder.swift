@@ -10,5 +10,7 @@ public protocol DoubleCounterBuilder: AnyObject {
 
   func setUnit(_ unit: String) -> Self
 
+  func setDescription(_ description: String) -> Self
+
   func buildWithCallback(_ callback: @escaping (ObservableDoubleMeasurement) -> Void) -> ObservableDoubleCounter
 }
